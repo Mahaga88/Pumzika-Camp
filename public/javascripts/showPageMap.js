@@ -1,7 +1,6 @@
 mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
   container: "map", // container ID
-  // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   style: "mapbox://styles/mapbox/outdoors-v12", // style URL
   center: campground.geometry.coordinates, // starting position [lng, lat]
   zoom: 10, // starting zoom
@@ -9,8 +8,8 @@ const map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-new mapboxgl.Marker({ color: "red" })
-  .setLngLat(campground.geometry.coordinates)
+const marker = new mapboxgl.Marker({ color: "red" })
+  .setLngLat(campground.geometry.coordinates) // Update the marker's coordinates
   .setPopup(
     new mapboxgl.Popup({ offset: 25 }).setHTML(
       `<h3>${campground.title}</h3> <p>${campground.location}</p>`
