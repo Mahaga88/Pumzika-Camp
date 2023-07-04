@@ -4,19 +4,19 @@ Pumzika Camp is a web application that allows users to discover and book camping
 
 ## Screenshots
 
-![Screenshot 1](![Home Page](/Screenshots/Pumzika-Camp.png))
+[Home Page](/Screenshots/Pumzika-Camp.png)
 _HomePage_
 
-![Screenshot 2](![Login Page](/Screenshots/Login.png))
+[Login Page](/Screenshots/Login.png)
 _Login Page_
 
-![Screenshot 3](![Sign Up Page](/Screenshots/Register.png))
+[Sign Up Page](/Screenshots/Register.png)
 _Sign Up Page_
 
-![Screenshot 4](![Cluster Map](/Screenshots/Mapbox.png))
+[Cluster Map](/Screenshots/PumzikaClusterMap.png)
 _Cluster Map_
 
-## Features
+    ## Features
 
 - User registration and authentication system
 - Browse and search for available campsites
@@ -68,7 +68,7 @@ For more details, please refer to the [LICENSE](LICENSE) file.
 
 ## Acknowledgements
 
-- This project was developed as part of my Coding Bootcamp's final project.
+- This project was developed as part of my Web Developer Coding Bootcamp's final project.
 - The project's design and functionality were inspired by similar camping and booking platforms.
 
 ## Contact
