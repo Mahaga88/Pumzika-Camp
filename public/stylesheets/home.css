@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.alphacoders.com/129/1294371.jpg");
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  margin: 0;
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+  border-bottom-color: #ffffff;
+}
+
+.nav-link:active {
+  color: white;
+  border-bottom-color: white;
+}
+
+.btn-secondary .btn-secondary:hover {
+  color: #333;
+  text-shadow: none;
+}
