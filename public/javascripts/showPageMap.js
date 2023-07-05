@@ -1,5 +1,5 @@
 mapboxgl.accessToken = mapToken;
-const map = new mapboxgl.Map({
+let map = new mapboxgl.Map({
   container: "map", // container ID
   style: "mapbox://styles/mapbox/outdoors-v12", // style URL
   center: campground.geometry.coordinates, // starting position [lng, lat]
@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-const marker = new mapboxgl.Marker({ color: "red" })
+let marker = new mapboxgl.Marker({ color: "red" })
   .setLngLat(campground.geometry.coordinates) // Update the marker's coordinates
   .setPopup(
     new mapboxgl.Popup({ offset: 25 }).setHTML(
@@ -16,3 +16,11 @@ const marker = new mapboxgl.Marker({ color: "red" })
     )
   )
   .addTo(map);
+
+function updateMarkerPosition(newCoordinates) {
+  marker.setLngLat(newCoordinates); // Update the marker's position
+  map.flyTo({ center: newCoordinates }); // Fly to the new location on the map
+}
+
+const newCoordinates = [lng, lat]; // Update the coordinates with the new values
+updateMarkerPosition(newCoordinates);

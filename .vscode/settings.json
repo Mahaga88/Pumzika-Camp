@@ -8,5 +8,6 @@
     "UNCLUSTERED",
     "Waridi",
     "virtuals"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }
