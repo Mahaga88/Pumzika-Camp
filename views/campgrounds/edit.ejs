@@ -88,8 +88,10 @@
                 <label for="image-<%=i%>">Delete?</label>
                 <% })%>
             </div>
-      <div class="mb-3">
-        <button class="btn btn-info w-100">Update Campground</button>
+        <div class="mb-3">
+        <button class="btn btn-info w-100" id="update-location-button" data-campground-id="<%=campground._id%>">
+          Update Campground
+        </button>
       </div>
     </form>
     <a href="/campgrounds/<%= campground._id%>">Back To Campground</a>

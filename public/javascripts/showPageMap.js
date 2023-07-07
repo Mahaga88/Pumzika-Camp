@@ -16,11 +16,3 @@ let marker = new mapboxgl.Marker({ color: "red" })
     )
   )
   .addTo(map);
-
-function updateMarkerPosition(newCoordinates) {
-  marker.setLngLat(newCoordinates); // Update the marker's position
-  map.flyTo({ center: newCoordinates }); // Fly to the new location on the map
-}
-
-const newCoordinates = [lng, lat]; // Update the coordinates with the new values
-updateMarkerPosition(newCoordinates);
